@@ -1,31 +1,63 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Home | SkyNest Co-Living Spaces</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <header>
-    <a href="index.html">SkyNest</a>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="accommodation.html">Accommodation</a>
-      <a href="facilities.html">Facilities</a>
-      <a href="advice.html">Help and Advice</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
-
-  <main>
-    <h1>Live, work and meet people in Singapore</h1>
-    <p>Furnished rooms, fast Wi-Fi and shared spaces for young professionals, digital nomads and students.</p>
-    <a class="button" href="accommodation.html">See our packages</a>
-  </main>
-
-  <footer>
-    <p>SkyNest Co-Living Spaces, Singapore</p>
-  </footer>
-</body>
-</html>
+:root {
+  --blue: #123a63;
+  --orange: #c2410c;
+  --light: #f4f7fb;
+}
+body {
+  margin: 0;
+  font-family: system-ui, Arial, sans-serif;
+  line-height: 1.6;
+  background: var(--light);
+  color: #1b2733;
+}
+main {
+  max-width: 1000px;
+  margin: auto;
+  padding: 30px 20px;
+}
+header {
+  background: var(--blue);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+}
+header a, nav a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+}
+.button {
+  display: inline-block;
+  background: var(--orange);
+  color: white;
+  padding: 14px 26px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 20px;
+}
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  border-top: 5px solid var(--orange);
+}
+footer {
+  background: var(--blue);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+@media (max-width: 760px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  nav a {
+    display: block;
+  }
+}
