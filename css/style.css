@@ -75,20 +75,7 @@ th {
   background: var(--blue);
   color: white;
 }
-table {
-  border-collapse: collapse;
-  width: 100%;
-  background: white;
-}
-th, td {
-  border: 1px solid #c8d3df;
-  padding: 10px;
-  text-align: left;
-}
-th {
-  background: var(--blue);
-  color: white;
-}
+
 details {
   background: white;
   margin: 10px 0;
