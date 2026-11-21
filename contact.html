@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<title>Contact | SkyNest Co-Living Spaces</title>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -19,9 +19,29 @@
   </header>
 
   <main>
-    <h1>Live, work and meet people in Singapore</h1>
-    <p>Furnished rooms, fast Wi-Fi and shared spaces for young professionals, digital nomads and students.</p>
-    <a class="button" href="accommodation.html">See our packages</a>
+   <h1>Contact us</h1>
+<p>Ask about availability, prices, custom packages or accessibility support.</p>
+
+<form action="mailto:info@skynest.example" method="post" enctype="text/plain">
+  <label for="name">Name</label>
+  <input id="name" name="name" type="text" required>
+
+  <label for="email">Email</label>
+  <input id="email" name="email" type="email" required>
+
+  <label for="package">Package</label>
+  <select id="package" name="package">
+    <option>Premium Stay</option>
+    <option>Standard Stay</option>
+    <option>Short-Term Stay</option>
+    <option>Custom package</option>
+  </select>
+
+  <label for="message">Message (include any accessibility needs)</label>
+  <textarea id="message" name="message" rows="5" required></textarea>
+
+  <button class="button" type="submit">Send enquiry</button>
+</form>
   </main>
 
   <footer>
