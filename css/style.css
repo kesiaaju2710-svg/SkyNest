@@ -89,3 +89,14 @@ th {
   background: var(--blue);
   color: white;
 }
+details {
+  background: white;
+  margin: 10px 0;
+  padding: 14px 18px;
+  border-radius: 8px;
+}
+summary {
+  font-weight: bold;
+  cursor: pointer;
+  color: var(--blue);
+}
